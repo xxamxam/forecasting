@@ -1,5 +1,9 @@
 # forecasting
 
+
+открыть на collab `main.ipynb`[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/xxamxam/forecasting/blob/main/main.ipynb) 
+
+
 В этом репозитории представлена лабораторная работа по курсу 'Математические методы прогнозирования'
 
 Я взял работу № 404: аппроксимация временного ряда потребления электричества нейронными сетями LSTM и Neural ODE. Под аппроксимацией имеется в виду предсказание будущих значений по известному набору предыдущих.

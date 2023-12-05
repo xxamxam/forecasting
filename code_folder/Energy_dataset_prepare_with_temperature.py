@@ -7,6 +7,7 @@
 """
 
 PATH = './EnergyConsumption.xls'
+EMBED_DIM = 10
 import pandas as pd
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
@@ -44,7 +45,8 @@ df['Month'] = df['Date'].dt.month
 
 
 # построение погружений
-time_shifts = [1, 2, 3, 4, 5, 6, 7, 8, 9][::-1]
+time_shifts = list(range(1, EMBED_DIM))[::-1]
+
 
 df_emb = df.iloc[:, 3:4]
 df_emb.columns = ['energy']
